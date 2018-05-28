@@ -1,0 +1,8 @@
+.votes {
+  display: flex;
+  flex-direction: row;
+}
+
+.votes > div {
+  margin-right: 0.5em;
+}

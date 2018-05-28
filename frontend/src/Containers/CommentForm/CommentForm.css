@@ -1,0 +1,10 @@
+.commentorm {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 20px;
+}

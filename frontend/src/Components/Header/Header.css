@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  padding: 1%;
+  background-color: #e0e0e0;
+  font-size: 1em;
+  flex-wrap: wrap;
+}
+
+.header > div:nth-child(2) {
+  margin-left: auto;
+}
