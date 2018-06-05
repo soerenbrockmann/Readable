@@ -47,7 +47,8 @@ label {
 .onsave,
 .oncancel,
 .upvote,
-.downvote {
+.downvote,
+.readmore {
   color: #3399ff;
   cursor: pointer;
 }

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreatePost /> renders properly 1`] = `
+Object {
+  "addMatchers": [Function],
+  "autoMockOff": [Function],
+  "autoMockOn": [Function],
+  "clearAllMocks": [Function],
+  "clearAllTimers": [Function],
+  "deepUnmock": [Function],
+  "disableAutomock": [Function],
+  "doMock": [Function],
+  "dontMock": [Function],
+  "enableAutomock": [Function],
+  "fn": [Function],
+  "genMockFn": [Function],
+  "genMockFromModule": [Function],
+  "genMockFunction": [Function],
+  "isMockFunction": [Function],
+  "mock": [Function],
+  "resetAllMocks": [Function],
+  "resetModuleRegistry": [Function],
+  "resetModules": [Function],
+  "runAllImmediates": [Function],
+  "runAllTicks": [Function],
+  "runAllTimers": [Function],
+  "runOnlyPendingTimers": [Function],
+  "runTimersToTime": [Function],
+  "setMock": [Function],
+  "spyOn": [Function],
+  "unmock": [Function],
+  "useFakeTimers": [Function],
+  "useRealTimers": [Function],
+}
+`;

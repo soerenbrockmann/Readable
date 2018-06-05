@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import "./HandleComment.css";
-import CommentForm from "../../Containers/CommentForm";
 import CommentItem from "../CommentItem";
+import EditComment from "../../containers/EditComment";
 
 class HandleComment extends Component {
   constructor() {
@@ -13,21 +13,31 @@ class HandleComment extends Component {
   }
 
   render() {
+    const {
+      item,
+      item: { id },
+      onDelete,
+      onUpVote,
+      onDownVote
+    } = this.props;
+
+    const { option } = this.state;
     const showComment = () => this.setState({ option: "show" });
-    const { id } = this.props.item;
+    const editPost = () => this.setState({ option: "edit" });
+
     return (
       <div className="handlecomment">
-        {this.state.option === "show" && (
+        {option === "show" && (
           <CommentItem
-            item={this.props.item}
-            onEdit={() => this.setState({ option: "edit" })}
-            onDelete={this.props.onDelete}
-            onUpVote={this.props.onUpVote}
-            onDownVote={this.props.onDownVote}
+            item={item}
+            onEdit={editPost}
+            onDelete={onDelete}
+            onUpVote={onUpVote}
+            onDownVote={onDownVote}
           />
         )}
-        {this.state.option === "edit" && (
-          <CommentForm commentId={id} showComment={showComment} />
+        {option === "edit" && (
+          <EditComment commentId={id} showComment={showComment} />
         )}
       </div>
     );
@@ -42,7 +52,7 @@ CommentItem.propTypes = {
   onDelete: PropTypes.func.isRequired
 };
 
-CommentForm.propTypes = {
+EditComment.propTypes = {
   commentId: PropTypes.string,
   showComment: PropTypes.func
 };

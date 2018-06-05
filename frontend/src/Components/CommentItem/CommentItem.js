@@ -4,10 +4,13 @@ import "./CommentItem.css";
 import Votes from "../Votes";
 import FormatDate from "../FormatDate";
 
-const CommentItem = props => {
-  const { item, onDelete, onEdit, onUpVote, onDownVote } = props;
-  const { timestamp, body, author, voteScore } = item;
-
+const CommentItem = ({
+  item: { timestamp, body, author, voteScore },
+  onDelete,
+  onEdit,
+  onUpVote,
+  onDownVote
+}) => {
   return (
     <div className="commentitem">
       <div>{body}</div>

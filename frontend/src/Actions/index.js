@@ -1,20 +1,23 @@
 export { default as fetchCategories } from "./categoriesAction";
-export { default as fetchPosts } from "./postsAction";
-export { default as fetchComments } from "./commentsAction";
 export { default as setSort } from "./sortAction";
 export {
+  fetchPosts,
   receivePost,
   savePost,
   deletePost,
   votePost,
-  updatePost,
-  default as fetchPost
-} from "./handlePostAction";
+  votePostDetails,
+  updatePosts,
+  updatePostDetails,
+  fetchPost,
+  increaseCommentCount,
+  decreaseCommentCount
+} from "./postsAction";
 export { default as saveAuthor } from "./loginAction";
 export {
+  fetchComments,
   saveComment,
   deleteComment,
-  fetchComment,
   updateComment,
   voteComment
-} from "./handleCommentAction";
+} from "./commentsAction";

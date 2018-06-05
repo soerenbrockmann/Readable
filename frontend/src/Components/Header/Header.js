@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import Logo from "../Logo";
-import Login from "../../Containers/Login";
+import Login from "../../containers/Login";
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
         <Logo />
       </div>
       <div>
-        <Link to="/posts/handlePost/create" className="link">
+        <Link to="/post/create" className="link">
           Create Posts
         </Link>
       </div>

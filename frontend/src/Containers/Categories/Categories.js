@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { fetchCategories } from "../../Actions";
-import Spinner from "../../Components/Spinner";
+import { fetchCategories } from "../../actions";
+import Spinner from "../../components/Spinner";
 import "./Categories.css";
 
 class Categories extends Component {
@@ -20,7 +20,7 @@ class Categories extends Component {
     const { categories = [] } = this.props;
     const items = categories.map((items, i) => (
       <li key={i}>
-        <Link to={`/category/${items.path}`} className="categorieslink">
+        <Link to={`/${items.path}`} className="categorieslink">
           {items.name}
         </Link>
       </li>
@@ -59,4 +59,7 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Categories);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Categories);

@@ -3,26 +3,26 @@ const initialState = {
 };
 
 const commentsReducer = (state = initialState, action) => {
+  const { comments = [], comment = {} } = action;
   switch (action.type) {
     case "RECEIVE_COMMENTS": {
-      const { comments } = action;
       return { ...state, comments };
     }
-    case "RECEIVE_COMMENT": {
-      const { comment } = action;
+    case "ADD_COMMENT": {
       return {
+        ...state,
         comments: [...state.comments, comment]
       };
     }
     case "DELETE_COMMENT": {
-      const { comment } = action;
       return {
+        ...state,
         comments: state.comments.filter(item => item.id !== comment.id)
       };
     }
     case "UPDATE_COMMENT": {
-      const { comment } = action;
       return {
+        ...state,
         comments: state.comments.map(
           item => (item.id === comment.id ? comment : item)
         )

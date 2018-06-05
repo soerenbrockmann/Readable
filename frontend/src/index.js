@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
-import App from "./Components/App";
+import App from "./components/App";
 import registerServiceWorker from "./registerServiceWorker";
 import { createStore, applyMiddleware, compose, combineReducers } from "redux";
 import thunk from "redux-thunk";
@@ -10,11 +10,9 @@ import {
   categoriesReducer,
   postsReducer,
   sortReducer,
-  handlePostReducer,
   loginReducer,
-  commentsReducer,
-  handleCommentReducer
-} from "./Reducers";
+  commentsReducer
+} from "./reducers";
 import { Provider } from "react-redux";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -22,10 +20,8 @@ const combinedReducers = combineReducers({
   categories: categoriesReducer,
   posts: postsReducer,
   sort: sortReducer,
-  selectedPost: handlePostReducer,
   login: loginReducer,
-  comments: commentsReducer,
-  selectedComment: handleCommentReducer
+  comments: commentsReducer
 });
 
 const store = createStore(

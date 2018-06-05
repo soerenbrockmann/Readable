@@ -25,7 +25,7 @@ ShallowWrapper {
           <Link
                     className="link"
                     replace={false}
-                    to="/posts/handlePost/create"
+                    to="/post/create"
           >
                     Create Posts
           </Link>
@@ -65,7 +65,7 @@ ShallowWrapper {
           "children": <Link
             className="link"
             replace={false}
-            to="/posts/handlePost/create"
+            to="/post/create"
 >
             Create Posts
 </Link>,
@@ -79,7 +79,7 @@ ShallowWrapper {
             "children": "Create Posts",
             "className": "link",
             "replace": false,
-            "to": "/posts/handlePost/create",
+            "to": "/post/create",
           },
           "ref": null,
           "rendered": "Create Posts",
@@ -123,7 +123,7 @@ ShallowWrapper {
             <Link
                         className="link"
                         replace={false}
-                        to="/posts/handlePost/create"
+                        to="/post/create"
             >
                         Create Posts
             </Link>
@@ -163,7 +163,7 @@ ShallowWrapper {
             "children": <Link
               className="link"
               replace={false}
-              to="/posts/handlePost/create"
+              to="/post/create"
 >
               Create Posts
 </Link>,
@@ -177,7 +177,7 @@ ShallowWrapper {
               "children": "Create Posts",
               "className": "link",
               "replace": false,
-              "to": "/posts/handlePost/create",
+              "to": "/post/create",
             },
             "ref": null,
             "rendered": "Create Posts",

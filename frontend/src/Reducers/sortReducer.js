@@ -1,5 +1,5 @@
 const initialState = {
-  sortBy: "timestamp,-"
+  sortBy: "timestamp,desc"
 };
 
 const sortReducer = (state = initialState, action) => {

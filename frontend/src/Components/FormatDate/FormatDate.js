@@ -1,9 +1,7 @@
 import React from "react";
 import "./FormatDate.css";
 
-const FormatDate = props => {
-  const { timestamp = Date.now() } = props;
-
+const FormatDate = ({ timestamp = Date.now() }) => {
   const options = {
     weekday: "long",
     year: "numeric",

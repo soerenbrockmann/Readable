@@ -1,8 +1,7 @@
 import React from "react";
 import "./Votes.css";
 
-const Votes = props => {
-  const { onUpVote, onDownVote, voteScore } = props;
+const Votes = ({ onUpVote, onDownVote, voteScore }) => {
   return (
     <div className="votes">
       <div className="upvote" onClick={onUpVote}>

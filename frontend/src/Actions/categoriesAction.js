@@ -1,4 +1,4 @@
-import * as CategoriesAPIUtil from "../Util/categoriesApiUtil";
+import * as CategoriesAPIUtil from "../util/categoriesApiUtil";
 
 export const RECEIVE_CATEGORIES = "RECEIVE_CATEGORIES";
 

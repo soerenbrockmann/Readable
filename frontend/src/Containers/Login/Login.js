@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { saveAuthor } from "../../Actions";
+import { saveAuthor } from "../../actions";
 
 import "./Login.css";
 
@@ -75,4 +75,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
   saveAuthor: author => dispatch(saveAuthor(author))
 });
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Login);
