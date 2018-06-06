@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 10px;
+  font-size: 20px;
+}
+
+input,
+textarea,
+select,
+label {
+  font-size: 20px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+}
+
+.app > div {
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  grid-column: 1 / -1;
+}
+
+.categories {
+  grid-column: 1 / 2;
+}
+
+.content {
+  grid-column: 2 / 12;
+  justify-content: center;
+  display: flex;
+}
+
+.footer {
+  grid-column: 1 / -1;
+}
+
+.ondelete,
+.onedit,
+.onclose,
+.onsave,
+.oncancel,
+.upvote,
+.downvote,
+.readmore {
+  color: #3399ff;
+  cursor: pointer;
+}
+
+.link {
+  padding: 10px;
+  background-color: firebrick;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 0.5em;
+  font-size: 20px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  justify-content: row;
+  font-size: 36pt;
+}
+
+.firstletter {
+  color: firebrick;
+}
+
+.logolink,
+a {
+  text-decoration: none;
+  color: #000;
+}

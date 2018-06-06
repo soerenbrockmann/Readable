@@ -1,0 +1,15 @@
+.sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 1em;
+  flex-wrap: wrap;
+}
+
+h3 {
+  margin: 0;
+}
+
+select {
+  margin-left: 1em;
+}

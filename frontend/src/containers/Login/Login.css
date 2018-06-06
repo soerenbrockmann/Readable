@@ -1,0 +1,15 @@
+.login {
+  display: flex;
+}
+
+.loginform,
+.loggedin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logininput,
+.loggedintext {
+  margin-right: 0.5em;
+}

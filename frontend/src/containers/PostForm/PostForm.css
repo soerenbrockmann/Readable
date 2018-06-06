@@ -1,0 +1,27 @@
+.postform {
+  display: flex;
+  flex-direction: column;
+}
+
+.postform > div {
+  margin-bottom: 1em;
+}
+
+.postformcategory {
+  display: flex;
+  flex-direction: row;
+}
+
+.onsave {
+  margin-right: 0.5em;
+}
+
+.postformedit {
+  display: flex;
+}
+
+.postError {
+  font-size: 16px;
+  color: firebrick;
+  margin-top: 0.5em;
+}
